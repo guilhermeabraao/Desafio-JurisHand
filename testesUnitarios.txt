@@ -1,0 +1,50 @@
+curl --request GET \
+  --url http://localhost:3000/listar \
+
+curl --request GET \
+  --url http://localhost:3000/filtrar \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"categoria":"civil"
+}'
+
+curl --request GET \
+  --url http://localhost:3000/filtrar \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"categoria":"penal"
+}'
+
+curl --request GET \
+  --url http://localhost:3000/filtrar \
+
+curl --request GET \
+  --url http://localhost:3000/filtrar \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"termo":"alien"
+}'
+
+curl --request GET \
+  --url http://localhost:3000/buscar \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"termo":"penal"
+}'
+
+curl --request GET \
+  --url http://localhost:3000/buscar \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"termo":"trabalho"
+}'
+
+curl --request GET \
+  --url http://localhost:3000/buscar
+
+curl --request GET \
+  --url http://localhost:3000/buscar \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"termo":"alien"
+}'
